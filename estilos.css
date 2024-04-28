@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 20px; /* Espacio entre elementos */
+  }
+  
+  .contenedor {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para dispositivos móviles (menos de 768px) */
+  @media (max-width: 768px) {
+    body {
+      grid-template-columns: 1fr; /* Una columna para móviles */
+    }
+  }
+
+  .cabeza {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .foto {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .descripcion {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .contacto {
+    margin-top: 20px;
+  }
+  
+  .correo, .telefono, .instagram {
+    margin-bottom: 20px;
+  }
+  
+  .lenguajes {
+    margin-bottom: 20px;
+  }
+
+  .sobre-mi, .habilidades, .experiencias, .referencias {
+    margin-bottom: 20px;
+  }
+
+  .foto img {
+    border-radius: 50%;
+  }
+  
+  .lenguajes img {
+    margin-left: 5px;
+  }
