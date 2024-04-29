@@ -1,71 +1,107 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr; /* Una columna por defecto */
-    gap: 20px; /* Espacio entre elementos */
-  }
-  
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.foto img {
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+
+aside {
+  background-color: #333;
+  padding: 20px;
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+.contacto {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+
+section {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sobre-mi,
+.habilidades,
+.experiencias,
+.referencias {
+  margin-bottom: 20px;
+}
+
+
+.caja {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+}
+
+@media (max-width: 768px) {
   .contenedor {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para dispositivos móviles (menos de 768px) */
-  @media (max-width: 768px) {
-    body {
-      grid-template-columns: 1fr; /* Una columna para móviles */
-    }
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .cabeza {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .foto {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .descripcion {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-  
-  p {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .contacto {
+  aside {
+    margin-left: 0;
     margin-top: 20px;
   }
-  
-  .correo, .telefono, .instagram {
-    margin-bottom: 20px;
-  }
-  
-  .lenguajes {
-    margin-bottom: 20px;
-  }
 
-  .sobre-mi, .habilidades, .experiencias, .referencias {
-    margin-bottom: 20px;
+  .caja {
+    flex-basis: 100%;
   }
-
-  .foto img {
-    border-radius: 50%;
-  }
-  
-  .lenguajes img {
-    margin-left: 5px;
-  }
+}
